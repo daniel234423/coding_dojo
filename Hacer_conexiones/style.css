@@ -1,0 +1,192 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+}
+
+.nav-1 {
+    background-color: black;
+}
+
+.titul {
+    color: white;
+    padding: 10px;
+    margin-left: 260px;
+}
+
+.tituloo {
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+#numero{
+    color: white;   
+}
+.titulo div{
+    display:flex ;
+    width: 40px;
+    height: 35px;
+    background-color: gray;
+    border-radius: 100%;
+}
+.usuario-3 .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul li {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.boton {
+    background-color: rgb(2, 182, 182);
+    width: 80px;
+    height: 26px;
+    color: white;
+    margin-left: 314px;
+}
+
+
+.usuario {
+    background-color: rgb(228, 228, 228);
+    width: 37%;
+    height: 310px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.aqua {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(2, 182, 182);
+}
+
+.jane {
+    margin-top: -65px;
+    border-radius: 65px;
+    padding: 25px;
+}
+
+.jane-h1 {
+    margin-top: -42px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.ubi {
+    margin-left: 15px;
+}
+
+p {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.edit {
+    margin-left: 15px;
+}
+
+.usuario-2 {
+    background-color: rgb(228, 228, 228);
+    width: 37%;
+    height: 200px;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+.usuario-2 ul li h2 {
+    color: black;
+}
+
+.usuario-2 ul li span {
+    color: grey;
+}
+
+.usuario-2 ul li h4 {
+    color: black;
+}
+
+.titulo {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+.perfil_div{
+    justify-content: space-around;
+}
+.usuario-3 {
+    background-color: rgb(228, 228, 228);
+    width: 250px;
+    margin-left: 60%;
+    margin-top: -33.5em;
+}
+.prfil_div2{
+    display: flex;
+
+}
+.perfil_ar img{
+    width: 30px;
+    border-radius: 20px;
+    margin: 1em;
+}
+.perfil_ar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+.usuario-3 div{
+    display: flex;
+    align-items: center;
+}
+
+.usuario-4 {
+    background-color: rgb(228, 228, 228);
+    width: 250px;
+    margin-left: 60%;
+    margin-top: 2%;
+}
+
+.names {
+    width: 30px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.nane {
+    width: 30px;
+    border-radius: 35px;
+    margin: 15px;
+
+}
+
+.gris {
+    height: 5px;
+    width: 100%;
+    background-color: grey;
+    margin-top: -0px;
+}
+
+.usuario-4 a {
+    margin: 20px;
+    margin-top: 10px;
+}
+.usuario-4 div{
+    display: flex;
+    align-items: center;
+}
+
+.tiket {
+    margin-left: 80px;
+}
+
+.tikett {
+    margin-left: 90px;
+}
