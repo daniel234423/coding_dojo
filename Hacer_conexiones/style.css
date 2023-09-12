@@ -75,7 +75,7 @@ ul li a {
     padding: 25px;
 }
 
-.jane-h1 {
+#jane_h1 {
     margin-top: -42px;
     margin-left: 10px;
     padding: 5px;
@@ -90,8 +90,10 @@ p {
     margin-left: 15px;
 }
 
-.edit {
-    margin-left: 15px;
+#edit {
+    margin-left: 5px;
+    width: 20px;
+    margin-top: 1em;
 }
 
 .usuario-2 {
