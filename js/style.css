@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+header div {
+    background-color: rgb(179, 0, 255);
+    height: 10px;
+}
+header{
+    background-color: rgb(64, 63, 63);
+    height: 4em;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+nav h1{
+    color: white;
+}
+nav input{
+    border: 2px solid black;
+    width: 35em;
+}
+nav button{
+    background-color: rgb(179, 0, 255);
+    color: white;
+    width: 60px;
+}
+.primer-video video{
+    width: 50vw;
+}
+.primer-video{
+    margin: 20px;
+}
+.caja_madre{
+    display: flex;
+}
+.videos-derecha{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-top: 20px;
+    margin-left: 40px;
+}
