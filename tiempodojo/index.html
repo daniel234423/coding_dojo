@@ -1,98 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tiempodojo</title>
+    <title>DojoWeather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<main>
-    <header>
-        <nav>
+    <div class="top">
+        <div class="nav">
             <h1>DojoWeather</h1>
-            <ul>
+            <ul class="links">
                 <li onclick="loading()"><a href="#">Burbank</a></li>
                 <li onclick="loading()"><a href="#">Chicago</a></li>
                 <li onclick="loading()"><a href="#">Dallas</a></li>
             </ul>
-        </nav>
-    </header>
-    <section class="principal_box">
-        <article class="primer_ar">
-            <div>
-                <h2>San Jose</h2>
-            </div>
-            <form class="div_temperatura">
+        </div>
+    </div>
+    <div class="container">
+        <div class="subtitle-line">
+            <h2>San Jose</h2>
+            <form>
                 <label>Show temperature in </label>
-                <select name="Clima" id="clima" onchange="convert(this)">
-                    <option>°c</option>
+                <select name="temperature-scale" onchange="convert(this)">
+                    <option>°C</option>
                     <option>°F</option>
                 </select>
             </form>
-        </article>
-            <hr>
-    </section>
-    <section class="sec_temp">
-        <article class="ar_temp">
-            <div class="temp_components">
-                <h2>Today</h2>
-                <img src="/tiempodojo/assets/some_rain.png" alt="">
+        </div>
+        <div class="row">
+            <div class="forecast">
+                <h1>Today</h1>
+                <img src="assets/some_rain.png" alt="rain">
                 <p>some rain</p>
+                <p class="temperatures">
+                    <span class="high" id="temp1">24</span>
+                    <span class="low" id="temp2">18</span>
+                </p>
             </div>
-            <div class="temp_component2">
-                <p class="high" id="tem1">24</p>
-                <p class="low" id="tem2">18</p>
-            </div>
-        </article>
-        <article class="ar_temp">
-            <div class="temp_components">
-                <h2>Tomorrow</h2>
-                <img src="/tiempodojo/assets/some_sun.png" alt="">
+            <div class="forecast">
+                <h1>Tomorrow</h1>
+                <img src="assets/some_sun.png" alt="sun">
                 <p>some sun</p>
+                <p class="temperatures">
+                    <span class="high" id="temp3">27</span>
+                    <span class="low" id="temp4">19</span>
+                </p>
             </div>
-            <div class="temp_component2">
-                <span class="high" id="tem3">27</span>
-                <span class="low" id="tem4">19</span>
+            <div class="forecast">
+                <h1>Friday</h1>
+                <img src="assets/some_clouds.png" alt="clouds">
+                <p>some cloud</p>
+                <p class="temperatures">
+                    <span class="high" id="temp5">21</span>
+                    <span class="low" id="temp6">16</span>
+                </p>
             </div>
-        </article>
-        <article class="ar_temp">
-            <div class="temp_components">
-                <h2>Today</h2>
-                <img src="/tiempodojo/assets/some_clouds.png" alt="">
-                <p>some clouds</p>
-            </div>
-            <div class="temp_component2">
-                <span class="high" id="tem5">21</span>
-                <span class="low" id="tem6">16</span>
-            </div>
-        </article>
-        <article class="ar_temp">
-            <div class="temp_components">
-                <h2>Today</h2>
-                <img src="/tiempodojo/assets/some_sun.png" alt="">
+            <div class="forecast">
+                <h1>Saturday</h1>
+                <img src="assets/some_sun.png" alt="sun">
                 <p>some sun</p>
+                <p class="temperatures">
+                    <span class="high" id="temp7">26</span>
+                    <span class="low" id="temp8">21</span>
+                </p>
             </div>
-            <div class="temp_component2">
-                <span class="high" id="tem7">26</span>
-                <span class="low" id="tem8">21</span>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cookie-policy">
+            <img src="assets/cookie.png" alt="cookie">
+            <div class="text">
+                <h2>Stop! Cookie time.</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our site traffic. <a href="#">Read more...</a></p>
             </div>
-        </article>
-    </section>
-    <section class="sec_final">
-        <article class="ar_final">
-            <img src="/tiempodojo/assets/cookie.png" alt="">
-            <div>
-                <h1>Stop! Cookie time</h1>
-                <p id="text">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#"> Read more...</a></p>
-            </div>
-            <button id="boton" onclick="eliminar()">I accept</button>
-        </article>
-    </section>
-</main>
-<script src="/tiempodojo/script.js"></script>
+            <button class="btn" onclick="accept()">Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
