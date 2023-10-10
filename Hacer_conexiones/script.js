@@ -4,8 +4,7 @@ var p = document.querySelector('#edit_principal');
 
 p.addEventListener('click', function edit() {
     console.log("hola");
-    user.innerHTML = '<input type="text">';
-
+    user.innerHTML = '<input id="hola" type="text">';
 })
 var contador = document.querySelector('#numero');
 var boton = document.querySelector('#accept-circle');

@@ -13,7 +13,10 @@ nav{
     color: white;
     align-items: center;
     height: 5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
+
 nav ul{
     display: flex;
     list-style: none;
@@ -23,25 +26,104 @@ nav li a{
     color: white;
     padding-left: 10px;
 }
+
 .primer_ar{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-}
-.div_temperatura{
-    display: flex;
-}
-.div_temperatura p{
-    margin-right: 5px;
+    justify-content: space-around;
 }
 hr{
-    width: 60%;
-    border: 1px solid black;
+    width: 67%;
+    margin-left: 17%;
 }
-.ar_hr{
+.sec_temp{
     display: flex;
     justify-content: center;
 }
-.section_el_temp{
-    display:flex;
+.ar_temp{
+    background-color: #ddd;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 15%;
+    height: 20em;
+    border: 1px solid black;
+}
+.temp_components img{
+    width: 80%;
+    border-radius: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.temp_component2{
+    display: flex;
+    color: blue;
+    width: 90%;
+    justify-content: space-around;
+}
+#tem1{
+    color: red;
+}
+#tem3{
+    color: red;
+}
+#tem5{
+    color: red;
+}
+#tem7{
+    color: red;
+}
+.sec_final{
+    position: absolute;
+    width: 66%;
+    margin-left: 17%;
+    margin-top: -1em;
+    border: 2px solid black;
+}
+.ar_final{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.ar_final div{
+    width: 50%;
+}
+#text{
+    width:100%;
+}
+#boton{
+    padding: 5px 15px;
+    background-color: skyblue;
+    box-shadow: 5px 5px 0px black;
+}
+.high::after, .low::after{
+    content: "°";
+}
+@media screen and (max-width: 769px) {
+    hr{
+        margin-left: 5%;
+        width: 90%;
+    }
+    .temp_components h2{
+        font-size: 12px;
+    }
+    .temp_components p{
+        font-size: 10px;
+    }
+    .ar_temp{
+        height: 100%;
+    }
+    .sec_final{
+        width: 80%;
+
+    margin-left: 10%;
+    }
+    #text{
+        font-size: 6px;
+    }
+
 }

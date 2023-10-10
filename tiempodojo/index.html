@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tiempodojo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<main>
     <header>
         <nav>
             <h1>DojoWeather</h1>
             <ul>
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li onclick="loading()"><a href="#">Burbank</a></li>
+                <li onclick="loading()"><a href="#">Chicago</a></li>
+                <li onclick="loading()"><a href="#">Dallas</a></li>
             </ul>
         </nav>
     </header>
@@ -25,45 +26,73 @@
                 <h2>San Jose</h2>
             </div>
             <form class="div_temperatura">
-                <label>Show temperature in</label>
-                <select name="Clima" id="">
+                <label>Show temperature in </label>
+                <select name="Clima" id="clima" onchange="convert(this)">
                     <option>°c</option>
                     <option>°F</option>
                 </select>
             </form>
         </article>
-        <article class="ar_hr">
             <hr>
-        </article>
     </section>
-    <section class="section_el_temp">
-        <article class="tiempo_base">
-            <div class="element_temp">
-
-            </div>
-        </article>
-        <article class="tiempo_base">
-            <div class="element_temp">
+    <section class="sec_temp">
+        <article class="ar_temp">
+            <div class="temp_components">
                 <h2>Today</h2>
-                <img src="assets/some_clouds.png" alt="">
+                <img src="/tiempodojo/assets/some_rain.png" alt="">
+                <p>some rain</p>
+            </div>
+            <div class="temp_component2">
+                <p class="high" id="tem1">24</p>
+                <p class="low" id="tem2">18</p>
             </div>
         </article>
-        <article class="tiempo_base">
-            <div class="element_temp">
-                <img src="assets/" alt="">
+        <article class="ar_temp">
+            <div class="temp_components">
+                <h2>Tomorrow</h2>
+                <img src="/tiempodojo/assets/some_sun.png" alt="">
+                <p>some sun</p>
+            </div>
+            <div class="temp_component2">
+                <span class="high" id="tem3">27</span>
+                <span class="low" id="tem4">19</span>
             </div>
         </article>
-        <article class="tiempo_base">
-            <div class="element_temp">
-                <img src="assets/" alt="">
+        <article class="ar_temp">
+            <div class="temp_components">
+                <h2>Today</h2>
+                <img src="/tiempodojo/assets/some_clouds.png" alt="">
+                <p>some clouds</p>
+            </div>
+            <div class="temp_component2">
+                <span class="high" id="tem5">21</span>
+                <span class="low" id="tem6">16</span>
             </div>
         </article>
-        <article class="tiempo_base">
-            <div class="element_temp">
-                <img src="assets/" alt="">
+        <article class="ar_temp">
+            <div class="temp_components">
+                <h2>Today</h2>
+                <img src="/tiempodojo/assets/some_sun.png" alt="">
+                <p>some sun</p>
+            </div>
+            <div class="temp_component2">
+                <span class="high" id="tem7">26</span>
+                <span class="low" id="tem8">21</span>
             </div>
         </article>
     </section>
+    <section class="sec_final">
+        <article class="ar_final">
+            <img src="/tiempodojo/assets/cookie.png" alt="">
+            <div>
+                <h1>Stop! Cookie time</h1>
+                <p id="text">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#"> Read more...</a></p>
+            </div>
+            <button id="boton" onclick="eliminar()">I accept</button>
+        </article>
+    </section>
+</main>
+<script src="/tiempodojo/script.js"></script>
 </body>
 
 </html>
